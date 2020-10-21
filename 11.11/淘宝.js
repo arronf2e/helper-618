@@ -7,7 +7,7 @@
 var i = 0;
 var j = 0;
 
-var taskList = ['去浏览','去逛逛','去搜索','领取奖励'];
+var taskList = ['去浏览','去逛逛','去搜索', '逛一逛', '去完成','领取奖励'];
 
 var height = device.height;
 var width = device.width;
@@ -91,6 +91,8 @@ taskList.forEach(task => {
             case '去逛逛':
             case '去搜索':
             case '去浏览':
+            case '逛一逛':
+            case '去完成':
                 sleep(random(501, 515) * speed);
                 a.click();
                 sleep(random(1501, 1515) * speed);
